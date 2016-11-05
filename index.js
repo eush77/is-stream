@@ -9,7 +9,7 @@ isStream.writable = function (stream) {
 };
 
 isStream.readable = function (stream) {
-	return isStream(stream) && stream.readable !== false && typeof stream._read === 'function' && typeof stream._readableState === 'object';
+	return isStream(stream) && stream.readable !== false && typeof stream._read === 'function';
 };
 
 isStream.duplex = function (stream) {
